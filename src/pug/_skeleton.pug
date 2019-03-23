@@ -1,0 +1,54 @@
+include mixins/_mixins
+
+doctype html
+
+html(lang="en")
+
+  head
+    // Site Title
+    block title
+
+    // Meta
+    meta(name="format-detection" content="telephone=no")
+    meta(name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(charset="utf-8")
+
+    // Stylesheets
+
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700")
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css")
+    link(rel="stylesheet" href="https://unpkg.com/ionicons@4.5.1/dist/css/ionicons.min.css")
+    link(rel="stylesheet" href="/css/style.min.css")
+
+    // Javascript
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-viewport-checker/1.8.8/jquery.viewportchecker.min.js")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js")
+    script(src="js/script.js")
+
+  body
+
+    .svg-sprite
+      svg(width="0" height="0" class="hidden")
+        symbol(viewBox="0 0 26 26" id="iconfinder_double-arrow-up_383150")
+          g
+            path(d="M.046 24.418l2.084 2.084 10.837-10.836 10.836 10.836 2.084-2.084-12.92-12.92z")
+            path(d="M.046 13.418l2.084 2.084L12.967 4.666l10.836 10.836 2.084-2.084L12.967.498z")
+
+    //- include header
+    include parts/_header
+
+    //- banner
+    include parts/_banner
+
+    block page
+
+    include parts/_subscribe
+
+    include parts/_footer
+
+    a(href="#hero").top-button.js-top-button
+      svg(class="icon").top-button__icon
+       use(xlink:href="#iconfinder_double-arrow-up_383150")

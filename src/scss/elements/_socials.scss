@@ -1,0 +1,26 @@
+// Social
+
+.socials {
+    padding: 20px 0;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        a {
+            font-size: 18px;
+            color: $color-grey-normal;
+        }
+    }
+}

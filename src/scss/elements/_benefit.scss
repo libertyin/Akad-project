@@ -1,0 +1,16 @@
+// Benefit
+
+.benefit-item {
+    text-align: center;
+
+    &__icon {
+        height: 60px;
+        position: relative;
+        margin-bottom: 20px;
+
+        img {
+            max-width: 100%;
+            @include centered;
+        }
+    }
+}

@@ -1,0 +1,88 @@
+// typography
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $font-montserrat;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-grey;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 1.5;
+
+    &.without-border {
+
+        &:before { display: none }
+    }
+
+    span {
+        position: relative;
+        z-index: 10;
+    }
+
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 67px;
+        height: 21px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: $color-green;
+    }
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 2;
+    color: $color-grey;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.content-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 15px;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -5px;
+            background-color: $color-green;
+        }
+    }
+}
+

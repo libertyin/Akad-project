@@ -1,0 +1,24 @@
+//- header
+
+- var menuItems = ['Home', 'about us', 'services', 'portfolio', 'blog', 'contact us'];
+
+header.header.js-header
+    .container
+        nav.navbar.navbar-expand-lg.navbar-light
+            a(href="#").navbar-brand
+                img(src="img/logo.png" alt="")
+
+            button(
+                type="button", 
+                data-toggle="collapse",
+                data-target="#navbarSupportedContent",
+                aria-controls="navbarSupportedContent", 
+                aria-expanded="false", aria-label="Toggle navigation"
+                ).navbar-toggler
+                    span.navbar-toggler-icon
+
+            .collapse.navbar-collapse#navbarSupportedContent
+                ul.navbar-nav.ml-auto
+                    each item in menuItems
+                        li.nav-item
+                            a(href="#").nav-link= item

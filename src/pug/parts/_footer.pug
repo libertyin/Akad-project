@@ -1,0 +1,29 @@
+//- footer
+
+- var menuItems = ['Home', 'about us', 'services', 'portfolio', 'blog', 'contact us'];
+
+footer.footer
+    .container
+        .row
+            .col-md-8
+                nav.footer-nav
+                    ul.footer-nav__list
+                        each item in menuItems
+                            li
+                                a(href="#")= item
+            .col-md-4
+                .footer-copy Created by akhouad 2016. All Rights Reserved
+                .socials
+                    ul.socials__list
+                        li
+                            a(href="#") <i class="icon ion-logo-facebook"></i>
+                        li
+                            a(href="#") <i class="icon ion-logo-twitter"></i>
+                        li
+                            a(href="#") <i class="icon ion-logo-youtube"></i>
+                        li
+                            a(href="#") <i class="icon ion-logo-linkedin"></i>
+                        li
+                            a(href="#") <i class="icon ion-logo-pinterest"></i>
+                        li
+                            a(href="#") <i class="icon ion-logo-instagram"></i>

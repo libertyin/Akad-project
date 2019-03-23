@@ -1,0 +1,47 @@
+// Plan
+
+.plan-item {
+    position: relative;
+    padding: 30px;
+    border-top: 5px solid $color-green;
+    transition: $transition-base;
+
+    &:hover {
+        box-shadow: 0px 0px 50px 0px rgba($color-black, 0.25); 
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 0; 
+        height: 0; 
+        border-top: 10px solid $color-green;
+        border-left: 10px solid transparent;
+    }
+
+    &__title {
+        display: block;
+        text-align: left;
+
+        &:before {
+            display: none;
+        }
+    }
+
+    &__lable {
+        display: inline-block;
+        padding: 5px 10px;
+        margin-bottom: 50px;
+        font-size: 14px;
+        font-weight: 700;
+        background-color: $color-green;
+        color: $color-white;
+    }
+
+    &__list {
+        margin-bottom: 50px;
+    }
+}

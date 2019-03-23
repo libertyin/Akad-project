@@ -1,0 +1,115 @@
+extends  ../_skeleton
+
+block title
+  title="Services"
+
+block page
+  
+  section.section
+    .container
+      .section__header
+        h2
+          span What we do
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        
+      .row
+        .col-sm-6.js-animate-from-left
+          p Erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
+          .row
+            .col-lg-6
+              ul.content-list
+                li Remarkable style
+                li Captivating presentations
+                li Make your portfolio pop
+                li Words that matter
+                li Satisfied clients
+
+            .col-lg-6
+                ul.content-list
+                  li Remarkable style
+                  li Captivating presentations
+                  li Make your portfolio pop
+                  li Words that matter
+                  li Satisfied clients
+        
+        .col-sm-6.js-animate-from-right
+          img(src="img/what-we-do-img.png" alt="")
+
+  section.section
+    .container
+      .row
+        .col-md-6.col-lg-3
+          +benefit(
+            'img/benefit-icon-01.png', 
+            'KEEP PULSE GOING', 
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .'
+            )
+
+        .col-md-6.col-lg-3
+          +benefit(
+            'img/benefit-icon-02.png', 
+            'PASS THE LIMITS', 
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .'
+            )
+          
+        .col-md-6.col-lg-3
+          +benefit(
+            'img/benefit-icon-03.png', 
+            'GREAT IDEAS', 
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .'
+            )
+
+        .col-md-6.col-lg-3
+          +benefit(
+            'img/benefit-icon-04.png', 
+            'AWESOME SUPPORT', 
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .'
+            )
+
+  section.section
+    .container
+      .section__header
+        h2
+          span pricing plans
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+      .row
+        .col-sm-4
+          .plan-item
+            h2.plan-item__title BASIC 
+            .plan-item__lable $35.99 Monthly
+            ul.content-list.plan-item__list
+              li Lorem ipsum dolor sit amet
+              li Consectetuer adipiscing elit
+              li Sed diam nonummy
+              li Nibh euismod tincidunt
+              li Ut laoreet dolore
+              li Magna aliquam erat volutpat
+            a(href="#").btn get started 
+
+        .col-sm-4
+          .plan-item
+            h2.plan-item__title ADVANCED  
+            .plan-item__lable $55.99 Monthly
+            ul.content-list.plan-item__list
+              li Lorem ipsum dolor sit amet
+              li Consectetuer adipiscing elit
+              li Sed diam nonummy
+              li Nibh euismod tincidunt
+              li Ut laoreet dolore
+              li Magna aliquam erat volutpat
+            a(href="#").btn get started 
+
+        .col-sm-4
+          .plan-item
+            h2.plan-item__title smart 
+            .plan-item__lable $75.99 Monthly
+            ul.content-list.plan-item__list
+              li Lorem ipsum dolor sit amet
+              li Consectetuer adipiscing elit
+              li Sed diam nonummy
+              li Nibh euismod tincidunt
+              li Ut laoreet dolore
+              li Magna aliquam erat volutpat
+            a(href="#").btn get started 
+          

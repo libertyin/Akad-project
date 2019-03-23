@@ -1,0 +1,21 @@
+// Header
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: $transition-base;
+
+    &.is-pre-fixed {
+        transform: translate(0, -100%);
+    }
+
+    &.is-fixed {
+        position: fixed;
+        z-index: 99;
+        transform: translate(0, 0);
+        border-bottom: 3px solid $color-green;
+        background-color: $color-white;
+    }
+}

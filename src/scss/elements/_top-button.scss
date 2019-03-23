@@ -1,0 +1,32 @@
+// Top button
+
+.top-button {
+    position: fixed;
+    display: block;
+    right: 50px;
+    bottom: 50px;
+    z-index: 100;
+ 
+    &__icon {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        background-color: $color-white;
+        fill: rgba($color-green, .8);
+        animation: 1s pulse infinite ease-in-out;
+    }
+ 
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+ 
+        50% {
+            transform: scale(1.1);
+        }
+ 
+        100% {
+            transform: scale(1);
+        }
+    }
+ }

@@ -1,0 +1,30 @@
+// Button
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    font-family: $font-montserrat;
+    font-size: 14px;
+    border: 2px solid $color-green;
+    border-radius: 0;
+    color: $color-white;
+    background-color: $color-green;
+    transition: $transition-base;
+
+    &:hover {
+        color: $color-green;
+        background-color: $color-white; 
+    }
+
+    &--white {
+        background-color: $color-white;
+        color: $color-green;
+
+        &:hover {
+            color: $color-white;
+            border-color: $color-white;
+            background-color: $color-green;
+        }
+    }
+}
